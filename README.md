@@ -69,21 +69,7 @@ Seluruh data konser, nama penampil, harga, dan kuota tiket dalam demo sistem ini
 
 ---
 
-## 3. Aturan Baku Pengelolaan Stok Tiket
-Sistem menerapkan aturan ketat untuk menjaga integritas transaksi promotor:
-1. **Perhitungan Stok Tunggal**:  
-   `Stok Tersedia = Kapasitas Awal - Tiket Terjual`
-2. **Kapasitas Non-Negatif**: Nilai kapasitas awal dan harga tiket tidak boleh di bawah angka 0.
-3. **Pencegahan Overselling**: Pesanan baru akan ditolak seketika oleh sistem jika kuantitas yang diminta melebihi sisa stok tiket tersedia.
-4. **Penguncian Baris Database (Row Locking)**: Setiap perubahan status pesanan dijalankan di dalam blok transaksi database (`DB::transaction`) dengan metode `lockForUpdate()` guna mencegah kondisi balapan (*race condition*) apabila dua pelanggan bertransaksi bersamaan.
-5. **Dampak Perubahan Status Pesanan Terhadap Stok**:
-   - Status **Menunggu Pembayaran** atau **Dibayar**: Kuota tiket dialokasikan (tiket terjual bertambah).
-   - Status diubah menjadi **Dibatalkan**: Kuota tiket segera dikembalikan ke stok tersedia (tiket terjual berkurang).
-   - Pesanan yang berstatus **Dibatalkan** hanya dapat diaktifkan kembali jika sisa kuota tiket masih mencukupi.
-
----
-
-## 4. Struktur Proyek
+## 3. Struktur Proyek
 
 | File / Folder | Fungsi |
 |---|---|
@@ -106,7 +92,7 @@ Sistem menerapkan aturan ketat untuk menjaga integritas transaksi promotor:
 
 ---
 
-## 5. Cara Login & Operasional
+## 4. Cara Login & Operasional
 1. **Login**: Akses URL aplikasi, masukkan email dan kata sandi admin, lalu klik **Masuk ke Dashboard**.
 2. **Tambah Konser**: Buka menu **Konser** > **+ Tambah Konser Baru**, isi detail konser dan unggah poster, lalu simpan.
 3. **Tambah Kategori & Stok Tiket**: Buka menu **Kategori & Stok Tiket** > **+ Tambah Kategori Tiket**, pilih konser, tentukan nama kategori, harga, dan alokasi kapasitas awal.
@@ -114,12 +100,12 @@ Sistem menerapkan aturan ketat untuk menjaga integritas transaksi promotor:
 
 ---
 
-## 6. Teknologi yang Digunakan
+## 5. Teknologi yang Digunakan
 - **Backend Framework**: Laravel 11.x / 12.x (PHP 8.2+)[cite: 1]
 - **Database Utama**: MySQL 8.0+
 - **Frontend / Template Engine**: Laravel Blade, HTML5, CSS, dan Vanilla JavaScript[cite: 1]
 
 ---
 
-## 7. Lisensi & Hak Cipta
+## 6. Lisensi & Hak Cipta
 Hak Cipta © 2026 Atta Alfarizi. Seluruh hak cipta dilindungi undang-undang.
