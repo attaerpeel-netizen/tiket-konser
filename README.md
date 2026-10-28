@@ -69,8 +69,6 @@ Seluruh data konser, nama penampil, harga, dan kuota tiket dalam demo sistem ini
 - **Backend Framework**: Laravel 11.x / 12.x (PHP 8.2+)
 - **Database Utama**: MySQL 8.0+
 - **Template Engine**: Laravel Blade dengan HTML5 & Vanilla JavaScript
-- **Styling**: Tailwind CSS (Skema Dark Charcoal, Aksen Marun Underground, dan Oranye Hangat)
-- **Pengujian Otomatis**: PHPUnit / Pest Framework
 
 ---
 
