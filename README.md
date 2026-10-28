@@ -15,7 +15,6 @@
 
 Dashboard administrasi manajemen tiket untuk promotor dan festival musik pop punk Indonesia. Sistem ini mengelola publikasi konser, alokasi kategori tiket, kuota stok tunggal (*single source of truth*), basis data pengguna, serta rekonsiliasi pesanan secara akurat.
 
-> **Catatan:** Seluruh data konser, lineup, harga, dan kuota dalam aplikasi ini berstatus sebagai data contoh/simulasi untuk keperluan portofolio.
 
 ---
 
