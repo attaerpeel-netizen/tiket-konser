@@ -75,7 +75,6 @@ Seluruh data konser, nama penampil, harga, dan kuota tiket dalam demo sistem ini
 ## 4. Cara Login Sebagai Administrator
 1. Buka peramban (*web browser*) dan arahkan ke alamat URL aplikasi Anda.
 2. Halaman pertama yang muncul adalah formulir login administrator.
-3. Masukkan alamat email admin dan kata sandi yang telah disiapkan secara terpisah oleh pengelola sistem (silakan merujuk ke dokumen teknis `SETUP.md` untuk informasi kredensial awal hasil seeder).
 4. Klik tombol **Masuk ke Dashboard**.
 5. Jika kredensial cocok, Anda akan diarahkan langsung ke halaman ringkasan Dashboard. Jika salah, sistem akan menampilkan pesan peringatan yang jelas.
 
