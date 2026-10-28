@@ -166,4 +166,3 @@ Sistem menerapkan aturan ketat untuk menjaga integritas transaksi promotor:
 - **Keluar (Logout)**: Mengakhiri sesi administrasi secara aman.
 
 ---
-*Untuk panduan teknis pemasangan server lokal, konfigurasi database MySQL, dan eksekusi seeder, silakan buka berkas terpisah: `SETUP.md`.*
