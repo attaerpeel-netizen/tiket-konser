@@ -10,13 +10,6 @@ use App\Http\Controllers\TicketCategoryController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes - PunkTicket Admin
-| Penyelenggara: Atta Alfarizi (attaerpeel@gmail.com)
-|--------------------------------------------------------------------------
-*/
-
 // Authentication Routes
 Route::middleware('guest')->group(function () {
     Route::get('/', [AuthController::class, 'showLogin']);
