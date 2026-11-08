@@ -106,6 +106,3 @@ Seluruh data konser, nama penampil, harga, dan kuota tiket dalam demo sistem ini
 - **Frontend / Template Engine**: Laravel Blade, HTML5, CSS, dan Vanilla JavaScript[cite: 1]
 
 ---
-
-## 6. Lisensi & Hak Cipta
-Hak Cipta © 2026 Atta Alfarizi. Seluruh hak cipta dilindungi undang-undang.
